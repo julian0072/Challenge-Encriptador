@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge One Julian Slongo</title>
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <img class="logo" src="Vector.png" alt="logo alura" />
+        <h1 class="titulo_logo">lura</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="contenedor">
+        <div class="encriptador">
+          <form class="encriptador_form">
+            <div class="texto_en_area">
+              <textarea
+                name="texto"
+                id="texto"
+                placeholder="Ingrese el texto aqui"
+              ></textarea>
+              <div class="texto_info">
+                <div class="info">
+                  <img src="bi_exclamation-circle-fill.png" />
+                  <p id="advertencia">Solo letras minúsculas y sin acento</p>
+                </div>
+              </div>
+
+              <div class="btn">
+                <button id="encri" class="btn_encriptar" type="button">
+                  Encriptar
+                </button>
+                <button id="desencri" class="btn_desencriptar" type="button">
+                  Desencriptar
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="resultado">
+            <div class="contenedor_resultado">
+              <div class="contenido_no_resuelto" id="noResuelto">
+                <div class="imagen_resultado">
+                  <img src="Muñeco.png" alt="munieco" />
+                </div>
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+              </div>
+
+              <div class="contenido_resuelto" id="resuelto">
+                <textarea
+                  name="texto_resultado"
+                  id="textoResultado"
+                  disabled
+                ></textarea>
+                <button id="copiar" type="button">Copiar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Alura Challenge 1, Julian Slongo</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
